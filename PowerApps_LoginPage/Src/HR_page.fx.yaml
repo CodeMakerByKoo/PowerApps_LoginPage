@@ -1,0 +1,103 @@
+HR_page As screen:
+
+    Label2 As label:
+        Text: =_lastname
+        X: =152
+        Y: =22
+        ZIndex: =1
+
+    Icon1 As icon.BackArrow:
+        Icon: =Icon.BackArrow
+        OnSelect: |+
+            =Navigate(login_page);
+            Set(_lastname,"");
+            Set(_user_email,"");
+            Set(_user_department,"");
+            Set(_user_access_right,"");
+            
+        X: =20
+        Y: =22
+        ZIndex: =2
+
+    Label2_1 As label:
+        Height: =44
+        Text: =_user_access_right
+        X: =302
+        Y: =18
+        ZIndex: =3
+
+    Label2_2 As label:
+        Text: =_user_department
+        X: =452
+        Y: =22
+        ZIndex: =4
+
+    Label2_3 As label:
+        Text: =_user_email
+        Width: =227
+        X: =602
+        Y: =22
+        ZIndex: =5
+
+    Gallery1 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Items: =Filter('New tables', 'New tables (Views)'.'Active New tables')
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =41
+        Width: =1335
+        X: =20
+        Y: =106
+        ZIndex: =7
+
+        TextInput_employee_name As text:
+            Default: =ThisItem.employee_name
+            OnSelect: =Select(Parent)
+            Width: =425
+            ZIndex: =1
+
+        TextInput_employee_id As text:
+            Default: =ThisItem.employee_id
+            OnSelect: =Select(Parent)
+            Width: =180
+            X: =425
+            ZIndex: =2
+
+        Dropdown_employee_department As dropdown:
+            AllowEmptySelection: =true
+            Default: =
+            Items: =["HR","Account","Finance"]
+            OnSelect: =Select(Parent)
+            Width: =180
+            X: =605
+            ZIndex: =3
+
+        TextInput_job_position As text:
+            Default: =ThisItem.job_position
+            OnSelect: =Select(Parent)
+            Width: =180
+            X: =785
+            ZIndex: =4
+
+        DatePicker_date_joined As datepicker:
+            Format: =Text(Today(),"dd-mm-yyyy")
+            OnSelect: =Select(Parent)
+            Width: =180
+            X: =964
+            ZIndex: =5
+
+        TextInput_employee_salary As text:
+            Default: =ThisItem.employee_salary
+            OnSelect: =Select(Parent)
+            Width: =180
+            X: =1144
+            ZIndex: =6
+
+    Button3 As button:
+        OnSelect: |-
+            =Patch('New tables',Defaults('New tables'),{employee_name:TextInput_employee_name.Text,employee_id:TextInput_employee_id.Text,employee_department:Dropdown_employee_department.Selected.Value,date_joined:DatePicker_date_joined.SelectedDate,employee_salary:TextInput_employee_salary.Text,_user_department:_user_department,_user_access_right:_user_access_right});
+        Text: ="Submit"
+        X: =1195
+        Y: =34
+        ZIndex: =8
+

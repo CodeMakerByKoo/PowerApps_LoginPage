@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crce0_loginusers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crce0_loginuser",
+    "MaxGetRowsCount": 2000,
+    "Name": "LoginUsers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crce0_lastname": "lastname",
+      "crce0_loginuser_AsyncOperations": "System Jobs",
+      "crce0_loginuser_BulkDeleteFailures": "Bulk Delete Failures",
+      "crce0_loginuser_DuplicateBaseRecord": "Duplicate Records (crce0_loginuser_DuplicateBaseRecord)",
+      "crce0_loginuser_DuplicateMatchingRecord": "Duplicate Records (crce0_loginuser_DuplicateMatchingRecord)",
+      "crce0_loginuser_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crce0_loginuser_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crce0_loginuser_ProcessSession": "Process Sessions",
+      "crce0_loginuser_SyncErrors": "Sync Errors",
+      "crce0_loginuserid": "LoginUser",
+      "crce0_user_access_right": "user_access_right",
+      "crce0_user_department": "user_department",
+      "crce0_user_email": "user_email",
+      "crce0_user_password": "user_password",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "LoginUsers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "LoginUsers (Views)",
+    "Name": "_crce0_loginuser_views",
+    "RelatedEntityName": "LoginUsers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "392a34ca-8920-430a-9da8-bb49eff2a9f4": "Inactive LoginUsers",
+      "5ff1c73c-b82e-4008-8bef-10e833868281": "LoginUser Advanced Find View",
+      "7929b616-f5e3-4d24-aabf-663e113ce8da": "LoginUser Lookup View",
+      "e8d3dc82-6ef8-4187-a6bf-deda11792fab": "LoginUser Associated View",
+      "f020ee04-5a07-4b70-8f85-46da2e5ce5c9": "Active LoginUsers"
+    }
+  },
+  {
+    "DisplayName": "Status (LoginUsers)",
+    "Name": "crce0_loginuser_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "LoginUsers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "LoginUsers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (LoginUsers)",
+    "Name": "crce0_loginuser_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "LoginUsers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "LoginUsers",
+    "Type": "OptionSetInfo"
+  }
+]

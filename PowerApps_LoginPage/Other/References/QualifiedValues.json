@@ -1,0 +1,37 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_crce0_loginuser_forms",
+      "Namespace": "LoginUsers (Forms)",
+      "Values": {
+        "Information": "8b225ee3-de7c-45cf-95d7-bb7cbf435b39"
+      }
+    },
+    {
+      "Kind": "default.cds_crce0_newtable1_forms",
+      "Namespace": "New tables (Forms)",
+      "Values": {
+        "Information": "9ec920d2-9913-4b02-960b-ac08cea4df7c"
+      }
+    },
+    {
+      "Kind": "default.cds_crce0_newtable_forms",
+      "Namespace": "New tables (Forms)1",
+      "Values": {
+        "Information": "b6635769-df2f-495d-84fd-83cd66779ea5"
+      }
+    },
+    {
+      "Kind": "default.cds_crce0_newtable1_forms",
+      "Namespace": "New tables (Forms)11",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_crce0_newtable1_forms",
+      "Namespace": "New tables (Forms)2",
+      "Values": {
+        "Information": "9ec920d2-9913-4b02-960b-ac08cea4df7c"
+      }
+    }
+  ]
+}
